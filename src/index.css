@@ -11,3 +11,211 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* start login style */
+.full-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("./image/bg-medicall.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+  background-position: center;
+}
+.login-wrapper{
+  width: 500px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  text-align: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form h1{
+  color: #039b8c;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.input-field{
+  position: relative;
+  border-bottom: 2px solid #039b8c;
+  margin: 15px 0;
+  
+}
+.input-field input{
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 40px;
+}
+.input-field label{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #039b8c;
+  font-size: 20px;
+  pointer-events: none;
+
+}
+.input-field input:focus~label,
+.input-field input:valid~label{
+  transform: translateY(-120%);
+  top: 10px;
+  font-size: 18px;
+}
+.login-wrapper button{
+  color: #fff;
+  background-color: #039b8c;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 3px;
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .login-wrapper {
+    padding: 15px;
+  }
+
+  form h1 {
+    font-size: 28px;
+  }
+
+  .input-field label {
+    font-size: 14px;
+  }
+
+  .input-field input {
+    padding: 8px;
+  }
+
+  .login-wrapper button {
+    width: 60%;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-wrapper {
+    padding: 10px;
+  }
+
+  form h1 {
+    font-size: 24px;
+  }
+
+  .input-field label {
+    font-size: 12px;
+  }
+
+  .input-field input {
+    padding: 6px;
+  }
+
+  .login-wrapper button {
+    width: 70%;
+    padding: 6px;
+  }
+}
+/* end login style */
+/* start navbar style */
+.navbar{
+  background-color:#f4f8f8;
+  /* border-bottom: 1px solid #039b8c; */
+}
+.nav-item{
+  color: #039b8c;
+}
+/* end navbar style */
+/* start home style */
+.home{
+  background-color: #039b8c;
+  border-radius: 7px;
+  margin-top: 60px;
+}
+.container-content{
+  display: flex;
+  justify-content: space-evenly;
+}
+.title{
+  text-align: center;
+  font-weight: bold;
+  font-size:35px;
+  color: #02645a;
+}
+.aboutus-card{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.service-card{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+}
+.home-cards{
+  border: 2px solid #02645a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 7px;
+  padding: 10px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+/* end home style */
+/* start scroll bar style */
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#02645a,#c7f5f0);
+  border-radius: 10px;
+}
+/* Media Queries */
+@media (min-width: 768px) {
+  .container-content {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .aboutus-card, .service-card {
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+
+  .home-cards {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .container-content {
+    padding: 20px 50px;
+  }
+}
+/* end scroll bar style */
