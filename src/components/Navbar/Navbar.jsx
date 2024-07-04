@@ -42,6 +42,9 @@ export default function Navbar() {
             <li className="nav-item m-auto">
                 <Link to="/">Home</Link>
             </li>
+            <li className="nav-item m-auto p-2">
+                <Link to="hospitals">Hospitals</Link>
+            </li>
             </ul>:""}
         </div>
         </div>

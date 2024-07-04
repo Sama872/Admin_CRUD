@@ -8,11 +8,13 @@ import Home from "./components/Home/Home";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import { useContext, useEffect } from "react";
 import { AdminToken } from "./Context/AdminToken";
+import Hospitals from "./components/Hospitals/Hospitals";
 
 function App() {
   let router=createBrowserRouter([{
     path:'/',element:<Layout/>,children:[
       {path:'',element:<ProtectedRoute><Home/></ProtectedRoute>},
+      {path:'hospitals',element:<ProtectedRoute><Hospitals/></ProtectedRoute>},
       {path:"login",element:<Login/>}
     ]
   }])
