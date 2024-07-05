@@ -222,19 +222,40 @@ form h1{
 /* end scroll bar style */
 /* hospital page style */
 .full-hospital-card{
-  border: 1px solid #039b8c;
   border-radius: 7px;
   padding: 0;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .hospital{
   margin-top: 100px;
 }
-.top-hospital-card{
+.full-hospital-card .top-hospital-card{
   background-color: #039b8c;
-  border-radius: 0 0 0 5px;
+  border-radius: 0 0 7px 7px;
   width: 100%;
+  height: 100%;
   margin: 0;
-  box-sizing: border-box;
+  color: white;
+  box-sizing: border-box; 
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-hospital-card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color:gray
+}
+.hospital-bottons{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
 }
 /* end of hospital page style */
