@@ -259,3 +259,48 @@ form h1{
   justify-content: center;
 }
 /* end of hospital page style */
+/* add hospital form style */
+.add-hospital{
+  margin: 80px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  border-radius: 7px;
+}
+.add-hospital input{
+  background-color: #edf2f5;
+  outline: none;
+  border: none;
+}
+.add-hospital label{
+  color: #037e71;
+  font-size: 18px;
+}
+.form-style{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.logo-part{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: 10px;
+  color: #039b8c;
+}
+.add-btn{
+  background-color: #039b8c;
+  color: white;
+  border: none;
+  width: 20%;
+  margin: 10px;
+  border-radius: 7px;
+  /* justify-content: center;
+  a
+  lign-items: center; */
+}
+.add-btn:hover{
+  background-color: #037e71;
+}
+/* end of hospital form style */

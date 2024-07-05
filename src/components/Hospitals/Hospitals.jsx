@@ -5,8 +5,7 @@ import { Grid } from 'react-loader-spinner';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import img1 from '../../image/hospital-animation-removebg-preview.png'
 import img2 from '../../image/hospital-bg-removebg-preview.png'
-
-
+import { Link } from 'react-router-dom';
 export default function Hospitals() {
   let { hospital, isLoading } = useSelector(({ hospitals }) => hospitals);
   let dispatch = useDispatch();
@@ -31,6 +30,7 @@ export default function Hospitals() {
         </div>
       ) : (
 <div className='row mt-5 justify-content-center'>
+  <button className='btn btn-info'><Link to='/add'>Add Hospital</Link></button>
   {hospital.map((hospital) => (
     <div className="col-md-3 m-2" key={hospital.id}>
       <div className='full-hospital-card'>
@@ -45,8 +45,8 @@ export default function Hospitals() {
             <h6>Sector :{hospital.type}</h6>
           </div>
           <div className='hospital-bottons'>
-            <button className='btn btn-outline-success m-2'><i class="fa-regular fa-pen-to-square"></i> Edite</button>
-            <button className='btn btn-outline-danger m-2'> <i class="fa-solid fa-trash" style={{color:"red"}}></i> Delete</button>
+            <button className='btn btn-outline-success m-2'><i className="fa-regular fa-pen-to-square"></i> Edite</button>
+            <button className='btn btn-outline-danger m-2'> <i className="fa-solid fa-trash" style={{color:"red"}}></i> Delete</button>
           </div>
       </div>
     </div>

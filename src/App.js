@@ -9,12 +9,14 @@ import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import { useContext, useEffect } from "react";
 import { AdminToken } from "./Context/AdminToken";
 import Hospitals from "./components/Hospitals/Hospitals";
+import AddHospital from "./components/Hospitals/AddHospital";
 
 function App() {
   let router=createBrowserRouter([{
     path:'/',element:<Layout/>,children:[
       {path:'',element:<ProtectedRoute><Home/></ProtectedRoute>},
       {path:'hospitals',element:<ProtectedRoute><Hospitals/></ProtectedRoute>},
+      {path:'add',element:<ProtectedRoute><AddHospital/></ProtectedRoute>},
       {path:"login",element:<Login/>}
     ]
   }])
