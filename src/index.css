@@ -176,7 +176,8 @@ form h1{
  
 }
 .home-cards{
-  border: 2px solid #02645a;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -276,9 +277,9 @@ form h1{
   font-size: 18px;
 }
 .form-style{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */ 
 
 }
 .logo-part{
@@ -289,18 +290,48 @@ form h1{
   margin: 10px;
   color: #039b8c;
 }
-.add-btn{
+/* .hospital .add-button button{
   background-color: #039b8c;
-  color: white;
-  border: none;
+  
   width: 20%;
-  margin: 10px;
+  color: #fff;
+
+} */
+/* .form-style input{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+
+} */
+.add-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: #fff;
+  border: none;
+  background-color: #039b8c;
+  padding: 5px;
   border-radius: 7px;
-  /* justify-content: center;
-  a
-  lign-items: center; */
+  width: 20%;
 }
 .add-btn:hover{
   background-color: #037e71;
 }
 /* end of hospital form style */
+/* extra styles */
+.all-link {
+  text-decoration: none;
+  color: inherit;
+}
+.active-link{
+  background-color: #039b8c;
+  border-radius: 7px;
+  color: #fff;
+  padding: 7px;
+
+}
+.active-link:hover{
+  background-color: #037e71;
+}
+/* end of extra styles */

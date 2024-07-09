@@ -39,11 +39,11 @@ export default function Navbar() {
             </li>
             </ul></>}
           {adminToken&&localStorage.getItem('userRole')==='admin'? <ul className="navbar-nav mr-auto">
-            <li className="nav-item m-auto">
-                <Link to="/">Home</Link>
+            <li className={window.location.pathname==='/'?"nav-item m-auto all-link active-link":"nav-item m-auto all-link"}>
+                <Link to="/" className='all-link'>Home</Link>
             </li>
-            <li className="nav-item m-auto p-2">
-                <Link to="hospitals">Hospitals</Link>
+            <li className={window.location.pathname==='/hospitals'?"nav-item m-auto all-link active-link":"nav-item m-auto p-2}"}>
+                <Link to="hospitals" className='all-link'>Hospitals</Link>
             </li>
             </ul>:""}
         </div>
